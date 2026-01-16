@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Heinrich Godinez III King | Data Scientist</title>
+  <title>Heinrich Godinez III King| Data Scientist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,54 +14,131 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">HG Data</a>
+
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div id="menu" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-center">
         <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         <li class="nav-item">
-          <button id="langBtn" class="btn btn-outline-light btn-sm">EN</button>
+          <button onclick="switchLang('en')" class="btn btn-outline-light btn-sm mx-1">EN</button>
+          <button onclick="switchLang('es')" class="btn btn-outline-light btn-sm">ES</button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
   <div class="container text-center">
-    <h1 id="title">Científico de Datos</h1>
-    <p id="subtitle">Transformo datos en decisiones de negocio</p>
-    <a href="#projects" class="btn btn-primary mt-3">Ver Proyectos</a>
+    <h1 id="hero-title">Científico de Datos</h1>
+    <p id="hero-subtitle">Transformo datos en decisiones de negocio</p>
   </div>
 </header>
 
+<!-- ABOUT -->
+<section id="about" class="container my-5">
+  <h2 id="about-title">Sobre mí</h2>
+  <p id="about-text">
+    Científico de datos con experiencia en análisis, machine learning y estadística, enfocado en resolver problemas reales de negocio.
+  </p>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects" class="container my-5">
-  <h2 class="text-center mb-4">Proyectos Destacados</h2>
+  <h2 class="text-center mb-5" id="projects-title">Proyectos Destacados</h2>
 
   <div class="row g-4">
+
+    <!-- CHURN -->
     <div class="col-md-6">
-      <div class="card project-card">
+      <div class="card project-card h-100">
         <img src="assets/img/churn.png" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Predicción de Churn – Beta Bank</h5>
-          <p class="card-text">
-            Modelo de machine learning para predecir abandono de clientes.
+          <h5 class="card-title" id="churn-title">Customer Churn – Beta Bank</h5>
+          <p class="card-text" id="churn-text">
+            Modelo de machine learning para identificar clientes con alto riesgo de abandono.
           </p>
           <p><strong>Herramientas:</strong> Python, Pandas, Scikit-learn</p>
-          <a href="https://github.com/..." class="btn btn-outline-primary">GitHub</a>
+          <a href="https://github.com/TU_USUARIO/churn" target="_blank" class="btn btn-outline-primary">
+            Ver proyecto
+          </a>
         </div>
       </div>
     </div>
+
+    <!-- RESTAURANTS -->
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <img src="assets/img/restaurants.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title" id="rev-title">Revenue Prediction – Restaurants</h5>
+          <p class="card-text" id="rev-text">
+            Análisis de datos para estimar ingresos y apoyar decisiones estratégicas.
+          </p>
+          <p><strong>Herramientas:</strong> Python, EDA</p>
+          <a href="https://github.com/TU_USUARIO/restaurants" target="_blank" class="btn btn-outline-primary">
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEOGAMES -->
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <img src="assets/img/videogames.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title" id="games-title">Video Game Sales Analysis</h5>
+          <p class="card-text" id="games-text">
+            Identificación de patrones que determinan el éxito comercial de videojuegos.
+          </p>
+          <p><strong>Herramientas:</strong> Python, Estadística</p>
+          <a href="https://github.com/TU_USUARIO/videogames" target="_blank" class="btn btn-outline-primary">
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEGALINE -->
+    <div class="col-md-6">
+      <div class="card project-card h-100">
+        <img src="assets/img/megaline.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title" id="mega-title">Megaline – Telecom Analysis</h5>
+          <p class="card-text" id="mega-text">
+            Análisis estadístico para recomendar el plan telefónico más rentable.
+          </p>
+          <p><strong>Herramientas:</strong> Python, Pruebas de hipótesis</p>
+          <a href="https://github.com/TU_USUARIO/megaline" target="_blank" class="btn btn-outline-primary">
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<footer class="text-center py-4 bg-dark text-light">
+  <p>© Heinrich Godínez</p>
+  <p>
+    <a href="https://www.linkedin.com/in/heinrichgodinezk/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/TU_USUARIO" target="_blank">GitHub</a>
+  </p>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/charts.js"></script>
+<script src="assets/js/lang.js"></script>
+
 </body>
 </html>
