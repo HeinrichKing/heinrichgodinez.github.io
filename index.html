@@ -1,89 +1,67 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Heinrich Godínez | Data Scientist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Heinrich Godinez III King | Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Heinrich Godínez</h1>
-    <p id="role">Científico de Datos</p>
-
-    <div class="lang-switch">
-        <button onclick="setLanguage('es')">ES</button>
-        <button onclick="setLanguage('en')">EN</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">HG Data</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        <li class="nav-item">
+          <button id="langBtn" class="btn btn-outline-light btn-sm">EN</button>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container text-center">
+    <h1 id="title">Científico de Datos</h1>
+    <p id="subtitle">Transformo datos en decisiones de negocio</p>
+    <a href="#projects" class="btn btn-primary mt-3">Ver Proyectos</a>
+  </div>
 </header>
 
-<section class="hero">
-    <h2 id="hero-title">Transformo datos en decisiones de negocio</h2>
-    <p id="hero-text">
-        Portafolio profesional de proyectos de análisis de datos y machine learning enfocados en resolver problemas reales.
-    </p>
-</section>
+<section id="projects" class="container my-5">
+  <h2 class="text-center mb-4">Proyectos Destacados</h2>
 
-<section>
-    <h2 id="about-title">Sobre mí</h2>
-    <p id="about-text">
-        Científico de datos con experiencia en análisis, modelos predictivos y visualización. He trabajado en proyectos
-        de banca, transporte, seguros y energía, enfocándome siempre en generar valor para el negocio.
-    </p>
-</section>
-
-<section>
-    <h2 id="projects-title">Proyectos destacados</h2>
-
-    <div class="projects">
-        <div class="card">
-            <h3 id="p1-title">Predicción de abandono de clientes</h3>
-            <p id="p1-text">
-                Desarrollo de un modelo de machine learning para identificar clientes con alto riesgo de abandono en un banco.
-            </p>
-            <span>Python · Machine Learning</span>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card project-card">
+        <img src="assets/img/churn.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Predicción de Churn – Beta Bank</h5>
+          <p class="card-text">
+            Modelo de machine learning para predecir abandono de clientes.
+          </p>
+          <p><strong>Herramientas:</strong> Python, Pandas, Scikit-learn</p>
+          <a href="https://github.com/..." class="btn btn-outline-primary">GitHub</a>
         </div>
-
-        <div class="card">
-            <h3 id="p2-title">Análisis de viajes en Chicago</h3>
-            <p id="p2-text">
-                Análisis exploratorio y pruebas estadísticas para entender el impacto del clima en los viajes en taxi.
-            </p>
-            <span>Python · Estadística</span>
-        </div>
-
-        <div class="card">
-            <h3 id="p3-title">Selección de regiones petroleras</h3>
-            <p id="p3-text">
-                Uso de regresión y bootstrapping para determinar la región más rentable y menos riesgosa.
-            </p>
-            <span>Regresión · Análisis de riesgo</span>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section>
-    <h2 id="skills-title">Habilidades</h2>
-    <ul class="skills">
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Machine Learning</li>
-        <li>Análisis de datos</li>
-        <li>Visualización</li>
-        <li>Excel / Power BI</li>
-    </ul>
-</section>
-
-<footer>
-    <p>📧 heinrichgodinezk@gmail.com</p>
-    <p>
-        <a href="https://www.linkedin.com/in/heinrichgodinezk/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/" target="_blank">GitHub</a>
-    </p>
-</footer>
-
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/charts.js"></script>
 </body>
 </html>
