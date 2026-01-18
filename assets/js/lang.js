@@ -10,10 +10,10 @@ const texts = {
 
     projectsTitle: "Proyectos Destacados",
 
-    churn: "En este proyecto se desarrolló un modelo predictivo para identificar clientes con alto riesgo de abandono, utilizando técnicas de clasificación supervisada y manejo de desbalance de clases. Se aplicó análisis exploratorio, ingeniería de características, pipelines de modelado y evaluación con métricas como F1-score y AUC-ROC. El objetivo fue anticipar la pérdida de clientes y generar insights accionables que ayuden a la empresa a diseñar estrategias de retención más efectivas.",
-    revenue: "Proyecto enfocado en predecir los ingresos de restaurantes mediante técnicas de machine learning, a partir de variables operativas y de comportamiento del negocio. Se realizó limpieza y análisis exploratorio de datos, entrenamiento y comparación de modelos de regresión, y selección del mejor modelo según métricas de desempeño. Como resultado final, se desarrolló una aplicación interactiva con Streamlit, que permite a usuarios ingresar datos y obtener predicciones en tiempo real, facilitando la toma de decisiones estratégicas sobre ventas y planeación financiera.",
-    games: "Análisis de datos históricos de ventas de videojuegos con el objetivo de identificar patrones de éxito comercial a lo largo del tiempo. Se exploraron tendencias por región, plataforma, género y año de lanzamiento, aplicando análisis estadístico y visualizaciones claras para detectar factores que influyen en el rendimiento de ventas. Este proyecto demuestra la capacidad de transformar datos en insights estratégicos útiles para decisiones de marketing, lanzamiento de productos y planeación comercial en la industria del entretenimiento.",
-    mega: "Proyecto de análisis enfocado en determinar el plan telefónico más rentable para una compañía de telecomunicaciones, combinando análisis exploratorio de datos con pruebas estadísticas de hipótesis. Se evaluó el comportamiento de los usuarios en llamadas, mensajes y consumo de datos, comparando ingresos y costos entre planes. Los resultados permiten respaldar decisiones comerciales basadas en datos y optimizar la oferta de planes para maximizar la rentabilidad de la empresa.",
+    churnText: "En este proyecto se desarrolló un modelo predictivo para identificar clientes con alto riesgo de abandono, utilizando técnicas de clasificación supervisada y manejo de desbalance de clases. Se aplicó análisis exploratorio, ingeniería de características, pipelines de modelado y evaluación con métricas como F1-score y AUC-ROC. El objetivo fue anticipar la pérdida de clientes y generar insights accionables que ayuden a la empresa a diseñar estrategias de retención más efectivas.",
+    revenueText: "Proyecto enfocado en predecir los ingresos de restaurantes mediante técnicas de machine learning, a partir de variables operativas y de comportamiento del negocio. Se realizó limpieza y análisis exploratorio de datos, entrenamiento y comparación de modelos de regresión, y selección del mejor modelo según métricas de desempeño. Como resultado final, se desarrolló una aplicación interactiva con Streamlit, que permite a usuarios ingresar datos y obtener predicciones en tiempo real, facilitando la toma de decisiones estratégicas sobre ventas y planeación financiera.",
+    gamesText: "Análisis de datos históricos de ventas de videojuegos con el objetivo de identificar patrones de éxito comercial a lo largo del tiempo. Se exploraron tendencias por región, plataforma, género y año de lanzamiento, aplicando análisis estadístico y visualizaciones claras para detectar factores que influyen en el rendimiento de ventas. Este proyecto demuestra la capacidad de transformar datos en insights estratégicos útiles para decisiones de marketing, lanzamiento de productos y planeación comercial en la industria del entretenimiento.",
+    megaText: "Proyecto de análisis enfocado en determinar el plan telefónico más rentable para una compañía de telecomunicaciones, combinando análisis exploratorio de datos con pruebas estadísticas de hipótesis. Se evaluó el comportamiento de los usuarios en llamadas, mensajes y consumo de datos, comparando ingresos y costos entre planes. Los resultados permiten respaldar decisiones comerciales basadas en datos y optimizar la oferta de planes para maximizar la rentabilidad de la empresa.",
 
     // 👉 NUEVOS
     musicTitle: "🎧 Musical Habits Analysis",
@@ -34,10 +34,10 @@ const texts = {
 
     projectsTitle: "Featured Projects",
 
-    churn: "In this project, a predictive model was developed to identify customers at high risk of churn, using supervised classification techniques and class imbalance handling methods. Exploratory data analysis, feature engineering, modeling pipelines, and evaluation with metrics such as F1-score and AUC-ROC were applied. The objective was to anticipate customer loss and generate actionable insights to help the company design more effective retention strategies.",
-    revenue: "Project focused on predicting restaurant revenue using machine learning techniques based on operational and business behavior variables. Data cleaning and exploratory analysis were performed, along with training and comparison of regression models and selection of the best model based on performance metrics. As a final result, an interactive application was developed with Streamlit, allowing users to input data and obtain real-time predictions, supporting strategic decision-making in sales and financial planning.",
-    games: "Analysis of historical video game sales data with the goal of identifying patterns of commercial success over time. Trends were explored by region, platform, genre, and release year, applying statistical analysis and clear visualizations to detect factors that influence sales performance. This project demonstrates the ability to transform data into strategic insights useful for marketing decisions, product launches, and commercial planning in the entertainment industry.",
-    mega: "Analytical project focused on determining the most profitable mobile plan for a telecommunications company by combining exploratory data analysis with statistical hypothesis testing. User behavior in calls, messages, and data consumption was evaluated, comparing revenues and costs across plans. The results support data-driven business decisions and help optimize plan offerings to maximize the company’s profitability.",
+    churnText: "In this project, a predictive model was developed to identify customers at high risk of churn, using supervised classification techniques and class imbalance handling methods. Exploratory data analysis, feature engineering, modeling pipelines, and evaluation with metrics such as F1-score and AUC-ROC were applied. The objective was to anticipate customer loss and generate actionable insights to help the company design more effective retention strategies.",
+    revenueText: "Project focused on predicting restaurant revenue using machine learning techniques based on operational and business behavior variables. Data cleaning and exploratory analysis were performed, along with training and comparison of regression models and selection of the best model based on performance metrics. As a final result, an interactive application was developed with Streamlit, allowing users to input data and obtain real-time predictions, supporting strategic decision-making in sales and financial planning.",
+    gamesText: "Analysis of historical video game sales data with the goal of identifying patterns of commercial success over time. Trends were explored by region, platform, genre, and release year, applying statistical analysis and clear visualizations to detect factors that influence sales performance. This project demonstrates the ability to transform data into strategic insights useful for marketing decisions, product launches, and commercial planning in the entertainment industry.",
+    megaText: "Analytical project focused on determining the most profitable mobile plan for a telecommunications company by combining exploratory data analysis with statistical hypothesis testing. User behavior in calls, messages, and data consumption was evaluated, comparing revenues and costs across plans. The results support data-driven business decisions and help optimize plan offerings to maximize the company’s profitability.",
 
     // 👉 NUEVOS
     musicTitle: "🎧 Musical Habits Analysis",
@@ -58,10 +58,10 @@ function switchLang(lang) {
 
   document.getElementById("projects-title").innerText = texts[lang].projectsTitle;
 
-  document.getElementById("churn-text").innerText = texts[lang].churn;
-  document.getElementById("rev-text").innerText = texts[lang].revenue;
-  document.getElementById("games-text").innerText = texts[lang].games;
-  document.getElementById("mega-text").innerText = texts[lang].mega;
+  document.getElementById("churn-text").innerText = texts[lang].churnText;
+  document.getElementById("rev-text").innerText = texts[lang].revenueText;
+  document.getElementById("games-text").innerText = texts[lang].gamesText;
+  document.getElementById("mega-text").innerText = texts[lang].megaText;
 
   // 👉 NUEVOS
   document.getElementById("music-title").innerText = texts[lang].musicTitle;
@@ -70,4 +70,5 @@ function switchLang(lang) {
   document.getElementById("insta-title").innerText = texts[lang].instaTitle;
   document.getElementById("insta-text").innerText = texts[lang].instaText;
 }
+
 
